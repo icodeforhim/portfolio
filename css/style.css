@@ -1,3 +1,41 @@
-.navbar{
-    background: red;
+/* Set some variables*/ 
+:root {
+    --pri-col: #38afff;
+    --drk-col: #007dd1;
+  }
+
+/* Modify the backgorund color */ 
+.navbar-custom { 
+    border-radius: 0;
+    margin: 0;
+} 
+/* Modify the navbar brand */ 
+.navbar-brand-custom{ 
+    color: #38afff;
+    text-decoration: none;
+    font-size: 1em;
+} 
+/* Modify the jumbotron */ 
+.jumbotron-custom{
+    background: var(--pri-col);
+    color: white;
+} 
+#navbar-p{
+    margin-top: 10px;
+}
+/* modifies the contents/Projects */
+.projects > .container > .row > div > .content{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* to remove the default margin in columns and padding in rows*/
+.row-no-padding {
+    margin-left: 0;
+    margin-right: 0;
+  }
+[class*="col-"],  /* Elements whose class attribute begins with "col-" */
+[class^="col-"] { /* Elements whose class attribute contains the substring "col-" */
+    padding-left: 0;
+    padding-right: 0;
 }
