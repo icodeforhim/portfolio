@@ -32,12 +32,14 @@
     margin: 10px;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+    transition: box-shadow .2s;
 }
 .projects > .container > .row > a{
     text-decoration: none;
 }
 /* hover effect */
-.projects > .container > .row > a:hover{
+.projects > .container > .row > a:hover > .content{
+    transition: ;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);
 }
