@@ -1,6 +1,6 @@
 /* Set some variables*/ 
 :root {
-    --pri-col: #38afff;
+    --pri-col: #0943a6;
     --drk-col: #007dd1;
   }
 
@@ -11,25 +11,43 @@
 } 
 /* Modify the navbar brand */ 
 .navbar-brand-custom{ 
-    color: #38afff;
+    color: var(--pri-col);
     text-decoration: none;
     font-size: 1em;
 } 
 /* Modify the jumbotron */ 
 .jumbotron-custom{
-    background: var(--pri-col);
+    background: linear-gradient(180deg, rgba(9,62,166,1) 0%, rgba(231,231,231,1) 100%);
     color: white;
 } 
 #navbar-p{
     margin-top: 10px;
 }
+
 /* modifies the contents/Projects */
-.projects > .container > .row > div > .content{
+.projects > .container > .row > a > .content{
+    color:black;
     border-radius: 5px;
-    margin: 10px;
     padding: 10px;
+    margin: 10px;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+}
+.projects > .container > .row > a{
+    text-decoration: none;
+}
+/* hover effect */
+.projects > .container > .row > a:hover{
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8); 
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);
+}
+.projects > .container > .row > a > .content > label{
+   font-size: 2em;
+   font-weight: bold;
+}
+.img-proj{
+    width: 100%; 
+    margin-bottom: 20px;
 }
 
 /* to remove the default margin in columns and padding in rows*/
@@ -42,3 +60,5 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+
