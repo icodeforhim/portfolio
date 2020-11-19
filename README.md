@@ -1,2 +1,3 @@
 # my-portfolio
-This is my Portfolio hosted by gihub
+This is my Portfolio hosted by github pages
+November 2020
