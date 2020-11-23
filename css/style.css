@@ -48,12 +48,13 @@ body{
 .projects > .container > .row > a{
     text-decoration: none;
 }
-/* hover effect */
+/* hover effect 
 .projects > .container > .row > a:hover > .content{
     transition: ;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);
 }
+*/
 .projects > .container > .row > a > .content > label{
    font-size: 2em;
    font-weight: bold;
