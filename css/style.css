@@ -29,8 +29,11 @@ body{
 } 
 #navbar-p{
     margin-top: 10px;
+    color: white;
 }
-
+.display-4-custom{
+    font-family: 'Montserrat', sans-serif;
+}
 /* modifies the contents/Projects */
 .projects > .container > .row > a > .content{
     background: var(--drk-con);
