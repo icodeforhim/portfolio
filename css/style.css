@@ -23,7 +23,7 @@ body{
 } 
 /* Modify the jumbotron */ 
 .jumbotron-custom{
-    background: url(../assets/background-content-desktop.jpg);
+    background: url(../assets/background-content-tablet.jpg);
     background-size: cover;
     color: white;
 } 
@@ -33,6 +33,10 @@ body{
 }
 .display-4-custom{
     font-family: 'Montserrat', sans-serif;
+}
+.btn-custom1{
+  width: 80%;
+ 
 }
 /* modifies the contents/Projects */
 .projects > .container > .row > a > .content{
