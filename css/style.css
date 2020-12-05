@@ -100,7 +100,7 @@ body{
 
 @include media-breakpoint-up(md) {
 
-  .jumbotron h1 {
+  .jumbotron-h1-custom {
 
    font-size: 1.4rem;
 
@@ -110,7 +110,7 @@ body{
 
 @include media-breakpoint-up(lg) {
 
-   .jumbotron h1 {
+   .jumbotron-h1-custom{
 
     font-size: 1.6rem;
 
