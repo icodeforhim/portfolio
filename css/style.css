@@ -23,7 +23,7 @@ body{
 } 
 /* Modify the jumbotron */ 
 .jumbotron-custom{
-    background: url(../assets/background-content-desktop.jpg)n-repeat center center fixed;
+    background: url(../assets/background-content-desktop.jpg)no-repeat center center fixed;
 
 
        
