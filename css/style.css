@@ -23,15 +23,24 @@ body{
 } 
 /* Modify the jumbotron */ 
 .jumbotron-custom{
-    background: url(../assets/background-content-tablet.jpg);
-    background-size: cover;
-    color: white;
+    background: url(../assets/background-content-desktop.jpg)n-repeat center center fixed;
+
+
+       
+   -webkit-background-size: cover;
+
+   -moz-background-size: cover;
+
+   background-size: cover;
+
+   -o-background-size: cover;
+
 } 
 #navbar-p{
     margin-top: 10px;
     color: white;
 }
-.display-4-custom{
+.jumbotron-h1-custom{
     font-family: 'Montserrat', sans-serif;
 }
 .btn-custom1{
