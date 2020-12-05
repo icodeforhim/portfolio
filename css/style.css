@@ -87,33 +87,24 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
-/*media queries*/
-@include media-breakpoint-up(sm) {
 
-  .jumbotron-h1-custom {
-
-   font-size: 1.2rem;
-
-  }
-
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .jumbotron-h1-custom {
+        font-size: 4em;
+    }
 }
 
-@include media-breakpoint-up(md) {
-
-  .jumbotron-h1-custom {
-
-   font-size: 1.4rem;
-
-  }
-
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .jumbotron-h1-custom {
+        font-size: 6em;
+    }
 }
 
-@include media-breakpoint-up(lg) {
-
-   .jumbotron-h1-custom{
-
-    font-size: 1.6rem;
-
-   }
-
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .jumbotron-h1-custom {
+        font-size: 8em;
+    }
 }
