@@ -122,6 +122,9 @@ body{
       font-size: 1em;
       width: 95%;
     }
+    #navbar-p{
+      Text-align: center;
+    }
 }
 /* Small devices (phones, less than 768px) */
 @media (min-width: 577px)and(max-width: 767px) {
@@ -144,6 +147,9 @@ body{
     .jumbotron > div > p{
       font-size: .7em;
       width: 80%;
+    }
+    #navbar-p{
+      Text-align: center;
     }
 
 }
