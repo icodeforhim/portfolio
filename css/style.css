@@ -8,6 +8,7 @@
   }
 body{
     background: var(--drk-bg);
+    //font-family: 'Montserrat';
 }
 /* Modify the backgorund color */ 
 .navbar-custom { 
@@ -21,6 +22,18 @@ body{
     color: white;
     text-decoration: none;
     font-size: 1em;
+    transition: opacity .2s;
+}
+.navbar-brand-custom:hover{
+  color: white;
+  opacity: .8;
+}
+/*logo*/
+.navbar-brand-custom img{
+   width: 100px; 
+   border: 1px solid white;
+   border-radius: 50%; 
+   margin-right: 5px;
 }
 
 /* Modify the jumbotron */ 
@@ -41,8 +54,12 @@ body{
     color: white;
 }
 .btn-custom1{
-  width: 80%;
- 
+  padding: 10px 20px;
+  transition: opacity .2s;
+}
+.btn-custom1:hover{
+  text-decoration: none;
+  opacity: .9;
 }
 /* modifies the contents/Projects */
 .projects > .container > .row > a > .content{
@@ -53,18 +70,17 @@ body{
     margin: 10px;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
-    transition: box-shadow .2s;
+    transition: transform .2s;
 }
 .projects > .container > .row > a{
     text-decoration: none;
 }
-/* hover effect 
-.projects > .container > .row > a:hover > .content{
-    transition: ;
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8); 
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.8);
+/* hover effect */
+.projects > .container > .row > a:hover > .content:hover{
+    transform: scale(1.03);
+    
 }
-*/
+
 .projects > .container > .row > a > .content > label{
    font-size: 2em;
    font-weight: bold;
@@ -84,29 +100,55 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+
 @media (max-width: 576px) {
     .jumbotron-custom{
-        background: url(../assets/background-content-phone.jpg)no-repeat center center;
+        background: url(../assets/background-mobile.png) center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
-    .jumbotron-h1-custom {
-        font-size: .5em;
+    .jumbotron-h1-custom{
+        font-size: .25em;
+    }
+    .navbar-brand-custom img{
+     width: 50px; 
+     border: 1px solid white;
+     border-radius: 50%; 
+     margin-right: 5px;
+    }
+    .jumbotron > div > p{
+      font-size: 1em;
+      width: 95%;
     }
 }
-/* Small devices (tablets, less than 768px) */
-@media (max-width: 767px) {
+/* Small devices (phones, less than 768px) */
+@media (min-width: 577px)and(max-width: 767px) {
     .jumbotron-custom{
-        background: url(../assets/background-content-phone.jpg)no-repeat center center;
+        background: url(../assets/background-mobile.png) center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
     }
     .jumbotron-h1-custom {
-        font-size: 1em;
+        font-size: 1.5em;
     }
+    .navbar-brand-custom img{
+     width: 50px; 
+     border: 1px solid white;
+     border-radius: 50%; 
+     margin-right: 5px;
+    }
+    .jumbotron > div > p{
+      font-size: .7em;
+      width: 80%;
+    }
+
 }
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 992px) {
+@media (max-width: 992px)  {
     .jumbotron-custom{
         background: url(../assets/background-content-tablet.jpg)no-repeat center center;
         -webkit-background-size: cover;
@@ -131,4 +173,5 @@ body{
     .jumbotron-h1-custom {
         font-size: 4em;
     }
+    
 }
