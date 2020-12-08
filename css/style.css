@@ -38,11 +38,11 @@ body{
 
 /* Modify the jumbotron */ 
 .jumbotron-custom{
-    background: url(../assets/background-content-desktop.jpg)no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background: url(../assets/background-content-desktop.jpg);
+    -webkit-background-size: 100%vw;
+    -moz-background-size: 100%vw;
+    background-size: 100%vw;
+    -o-background-size: 100%vw;
     color: white;
 } 
 #navbar-p{
@@ -103,11 +103,11 @@ body{
 
 @media (max-width: 576px) {
     .jumbotron-custom{
-        background: url(../assets/background-mobile.png) center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+        background: url(../assets/background-mobile.png);
+        -webkit-background-size: 100%vw;
+        -moz-background-size: 100%vw;
+        background-size: 100%vw;
+        -o-background-size: 100%vw;
     }
     .jumbotron-h1-custom{
         font-size: .25em;
@@ -126,11 +126,11 @@ body{
 /* Small devices (phones, less than 768px) */
 @media (min-width: 577px)and(max-width: 767px) {
     .jumbotron-custom{
-        background: url(../assets/background-mobile.png) center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+        background: url(../assets/background-mobile.png);
+        -webkit-background-size: 100%vw;
+        -moz-background-size: 100%vw;
+        background-size: 100%vw;
+        -o-background-size: 100%vw;
     }
     .jumbotron-h1-custom {
         font-size: 1.5em;
@@ -150,11 +150,11 @@ body{
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 992px)  {
     .jumbotron-custom{
-        background: url(../assets/background-content-tablet.jpg)no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+        background: url(../assets/background-content-tablet.jpg);
+        -webkit-background-size: 100%vw;
+        -moz-background-size: 100%vw;
+        background-size: 100%vw;
+        -o-background-size: 100%vw;
     }
     .jumbotron-h1-custom {
         font-size: 1em;
