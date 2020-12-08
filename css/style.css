@@ -7,14 +7,16 @@
     --drk-bg:black;
   }
 body{
+    background: gray;
+    /*
     background: var(--drk-bg);
-    //font-family: 'Montserrat';
+    font-family: 'Montserrat';*/
 }
 /* Modify the backgorund color */ 
 .navbar-custom { 
     border-radius: 0;
     margin: 0;
-    background: black;
+    background: gray;
 } 
 /* Modify the navbar brand */ 
 .navbar-brand-custom{ 
@@ -33,10 +35,10 @@ body{
 /* Modify the jumbotron */ 
 .jumbotron-custom{
     background: url(../assets/background-content-desktop.jpg);
-    -webkit-background-size: 100%vw;
-    -moz-background-size: 100%vw;
-    background-size: 100%vw;
-    -o-background-size: 100%vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     color: white;
 } 
 #navbar-p{
@@ -124,10 +126,10 @@ body{
 @media (min-width: 577px)and(max-width: 767px) {
     .jumbotron-custom{
         background: url(../assets/background-mobile.png);
-        -webkit-background-size: 100%vw;
-        -moz-background-size: 100%vw;
-        background-size: 100%vw;
-        -o-background-size: 100%vw;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        background-size:cover;
+        -o-background-size:cover;
     }
     .jumbotron-h1-custom {
         font-size: 1.5em;
@@ -151,10 +153,10 @@ body{
 @media (max-width: 992px)  {
     .jumbotron-custom{
         background: url(../assets/background-content-tablet.jpg);
-        -webkit-background-size: 100%vw;
-        -moz-background-size: 100%vw;
-        background-size: 100%vw;
-        -o-background-size: 100%vw;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
     .jumbotron-h1-custom {
         font-size: 1em;
