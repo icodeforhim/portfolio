@@ -113,10 +113,10 @@ body{
         -o-background-size: cover;
     }
     .jumbotron-h1-custom{
-        font-size: 2em;
+        font-size: 2rem;
     }
     .jumbotron > div > p{
-      font-size: 1em;
+      font-size: .8em;
       width: 95%;
     }
     #navbar-p{
@@ -124,20 +124,19 @@ body{
     }
 }
 /* Small devices (phones, less than 768px) */
-@media (min-width: 577px)and(max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
     .jumbotron-custom{
-        background: url(../assets/background-tablet.jpg);
+        background: url(../assets/background-content-desktop.jpg);
         -webkit-background-size:cover;
         -moz-background-size:cover;
         background-size:cover;
         -o-background-size:cover;
     }
     .jumbotron-h1-custom {
-        font-size: 1.5em;
+        font-size: 2.8rem;
     }
     .jumbotron > div > p{
-      font-size: .7em;
-      width: 80%;
+      font-size: 1em;
     }
     #navbar-p{
       opacity: .8;
@@ -145,37 +144,42 @@ body{
 
 }
 /* Small devices (tablets, 768px and up) */
-@media (min-width:768) and (max-width: 992px)  {
-    .jumbotron-custom{
-        background: url(../assets/background-content-tablet.jpg);
+@media (min-width: 768px) and (max-width: 992px){
+   .jumbotron-custom{
+        background: url(../assets/background-content-desktop.jpg);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
     }
     .jumbotron-h1-custom {
-        font-size: 1em;
+        font-size: 3.5rem;
     }
     .jumbotron > div > p{
-        font-size: .7em;
-        width: 80%;
-      }
+        font-size: 1.3em;
+        width: 90%;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width:993) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
     .jumbotron-h1-custom {
-        font-size: 2em;
+        font-size: 4rem;
     }
+    .jumbotron > div > p{
+        font-size: 1.5em;
+        width: 80%;
+    }
+    
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1201px) {
     .jumbotron-h1-custom {
-        font-size: 4em;
+        font-size: 6rem;
     }
     .jumbotron > div > p{
-        font-size: .7em;
+        font-size:  1.5em;
         width: 80%;
     }
     
