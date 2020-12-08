@@ -25,12 +25,19 @@ body{
     text-decoration: none;
     font-size: 1em;
     transition: opacity .2s;
+    
 }
 .navbar-brand-custom:hover{
   color: white;
   opacity: .8;
 }
-
+/*logo*/
+.navbar-brand-custom img{
+    width: 50px; 
+    border: 1px solid white;
+    border-radius: 50%; 
+    margin-right: 5px;
+   }
 
 /* Modify the jumbotron */ 
 .jumbotron-custom{
@@ -99,20 +106,14 @@ body{
 
 @media (max-width: 576px) {
     .jumbotron-custom{
-        background: url(../assets/background-mobile.png);
-        -webkit-background-size: 100%vw;
-        -moz-background-size: 100%vw;
-        background-size: 100%vw;
-        -o-background-size: 100%vw;
+        background: url(../assets/background-mobile.png) center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
     .jumbotron-h1-custom{
-        font-size: .25em;
-    }
-    .navbar-brand-custom img{
-     width: 50px; 
-     border: 1px solid white;
-     border-radius: 50%; 
-     margin-right: 5px;
+        font-size: 2em;
     }
     .jumbotron > div > p{
       font-size: 1em;
@@ -125,7 +126,7 @@ body{
 /* Small devices (phones, less than 768px) */
 @media (min-width: 577px)and(max-width: 767px) {
     .jumbotron-custom{
-        background: url(../assets/background-mobile.png);
+        background: url(../assets/background-tablet.jpg);
         -webkit-background-size:cover;
         -moz-background-size:cover;
         background-size:cover;
@@ -133,12 +134,6 @@ body{
     }
     .jumbotron-h1-custom {
         font-size: 1.5em;
-    }
-    .navbar-brand-custom img{
-     width: 50px; 
-     border: 1px solid white;
-     border-radius: 50%; 
-     margin-right: 5px;
     }
     .jumbotron > div > p{
       font-size: .7em;
@@ -150,7 +145,7 @@ body{
 
 }
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 992px)  {
+@media (min-width:768) and (max-width: 992px)  {
     .jumbotron-custom{
         background: url(../assets/background-content-tablet.jpg);
         -webkit-background-size: cover;
@@ -161,10 +156,14 @@ body{
     .jumbotron-h1-custom {
         font-size: 1em;
     }
+    .jumbotron > div > p{
+        font-size: .7em;
+        width: 80%;
+      }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (max-width: 1200px) {
+@media (min-width:993) and (max-width: 1200px) {
     .jumbotron-h1-custom {
         font-size: 2em;
     }
@@ -174,6 +173,10 @@ body{
 @media (min-width: 1201px) {
     .jumbotron-h1-custom {
         font-size: 4em;
+    }
+    .jumbotron > div > p{
+        font-size: .7em;
+        width: 80%;
     }
     
 }
