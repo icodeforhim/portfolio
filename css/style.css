@@ -3,7 +3,8 @@
 :root {
     --pri-col: #0099ff;
     --drk-col: #154599;
-    --blk-col: #505050;
+    --blk-col: #000000;
+    --gry-col: #5e5e5e;
     --drk-con: #303030;
     --lht-con: white;
     --drk-bg:black;
@@ -25,7 +26,7 @@ body{
 /* Modify the navbar brand */ 
 .navbar-brand-custom{ 
     font-family: 'Montserrat', sans-serif;
-    color: var(--pri-col);
+    color: var(--blk-col);
     text-decoration: none;
     font-size: 1em;
     transition: opacity .2s;
@@ -70,8 +71,8 @@ body{
 }
 /* modifies the contents/Projects */
 .projects > .container > .row > a > .content{
-    background: var(--drk-con);
-    color:white;
+    background: var(--lht-con);
+    color: var(--blk-col);
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
@@ -125,6 +126,9 @@ body{
       font-size: .8em;
       width: 95%;
     }
+    .projects > .container > .row > a:hover > .content{
+        transform: scale(1.01);
+    }
 }
 /* Small devices (phones, less than 768px) */
 @media (min-width: 577px) and (max-width: 767px) {
@@ -140,6 +144,9 @@ body{
     }
     .jumbotron > div > p{
       font-size: 1em;
+    }
+    .projects > .container > .row > a:hover > .content{
+        transform: scale(1.01);
     }
 }
 /* Small devices (tablets, 768px and up) */
