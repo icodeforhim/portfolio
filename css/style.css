@@ -56,7 +56,7 @@ body{
     -o-background-size: cover;
     color: white;
     text-align: justify;
-    text-shadow: 1px 1px 5px var(--drk-con);
+    text-shadow: 1px 1px 5px var(--blk-col);
 } 
 .jumbotron-h1-custom{
     font-family: 'Montserrat', sans-serif;
