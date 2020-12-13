@@ -2,7 +2,7 @@
 /* Set some variables*/ 
 :root {
     --pri-col: #0099ff;
-    --drk-col: #0943a6;
+    --drk-col: #154599;
     --drk-con: #303030;
     --lht-con: white;
     --drk-bg:black;
@@ -17,7 +17,8 @@ body{
 .navbar-custom { 
     border-radius: 0;
     margin: 0;
-    background: gray;
+    background:var(--drk-bg);
+    border-bottom:1px solid var(--drk-col);
 } 
 /* Modify the navbar brand */ 
 .navbar-brand-custom{ 
