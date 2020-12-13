@@ -3,12 +3,14 @@
 :root {
     --pri-col: #0099ff;
     --drk-col: #154599;
+    --blk-col: #505050;
     --drk-con: #303030;
     --lht-con: white;
     --drk-bg:black;
+    --lht-bg: #e3e7f0;
   }
 body{
-    background: rgb(227, 231, 240);
+    background:var(--lht-bg);
     /*
     background: var(--drk-bg);
     font-family: 'Montserrat';*/
@@ -17,21 +19,21 @@ body{
 .navbar-custom { 
     border-radius: 0;
     margin: 0;
-    background:var(--drk-bg);
+    background:var(--lht-bg);
     border-bottom:1px solid var(--drk-col);
 } 
 /* Modify the navbar brand */ 
 .navbar-brand-custom{ 
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: var(--pri-col);
     text-decoration: none;
     font-size: 1em;
     transition: opacity .2s;
     
 }
 .navbar-brand-custom:hover{
-  color: white;
-  opacity: .8;
+    color: var(--pri-col);
+    opacity: .8;
 }
 /*logo*/
 .navbar-brand-custom img{
@@ -40,7 +42,10 @@ body{
     border-radius: 50%; 
     margin-right: 5px;
    }
-
+#navbar-p{
+    margin-top: 10px;
+    color: var(--blk-col);
+}
 /* Modify the jumbotron */ 
 .jumbotron-custom{
     background: url(../assets/background-content-desktop.jpg);
@@ -49,11 +54,8 @@ body{
     background-size: cover;
     -o-background-size: cover;
     color: white;
+    text-align: justify;
 } 
-#navbar-p{
-    margin-top: 10px;
-    color: white;
-}
 .jumbotron-h1-custom{
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -123,9 +125,6 @@ body{
       font-size: .8em;
       width: 95%;
     }
-    #navbar-p{
-      opacity: .8;
-    }
 }
 /* Small devices (phones, less than 768px) */
 @media (min-width: 577px) and (max-width: 767px) {
@@ -142,10 +141,6 @@ body{
     .jumbotron > div > p{
       font-size: 1em;
     }
-    #navbar-p{
-      opacity: .8;
-    }
-
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 992px){
@@ -157,10 +152,10 @@ body{
         -o-background-size: cover;
     }
     .jumbotron-h1-custom {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
     .jumbotron > div > p{
-        font-size: 1.3em;
+        font-size: 1em;
         width: 90%;
 }
 }
@@ -168,10 +163,10 @@ body{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 993px) and (max-width: 1200px) {
     .jumbotron-h1-custom {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .jumbotron > div > p{
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: 80%;
     }
     
@@ -180,7 +175,7 @@ body{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1201px) {
     .jumbotron-h1-custom {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .jumbotron > div > p{
         font-size:  1.5em;
