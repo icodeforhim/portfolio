@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 /* Set some variables*/ 
 :root {
-    --pri-col: #0943a6;
-    --drk-col: #007dd1;
+    --pri-col: #0099ff;
+    --drk-col: #0943a6;
     --drk-con: #303030;
+    --lht-con: white;
     --drk-bg:black;
   }
 body{
-    background: gray;
+    background: rgb(227, 231, 240);
     /*
     background: var(--drk-bg);
     font-family: 'Montserrat';*/
@@ -78,15 +79,17 @@ body{
 .projects > .container > .row > a{
     text-decoration: none;
 }
-/* hover effect */
-.projects > .container > .row > a:hover > .content:hover{
+/* hover effect on projects*/
+.projects > .container > .row > a:hover > .content{
     transform: scale(1.03);
-    
 }
-
+.projects > .container > .row > a:hover > .content > label{
+    color: var(--pri-col);
+}
 .projects > .container > .row > a > .content > label{
    font-size: 2em;
    font-weight: bold;
+   transition: color .2s;
 }
 .img-proj{
     width: 100%; 
