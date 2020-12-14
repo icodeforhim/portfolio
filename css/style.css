@@ -63,12 +63,12 @@ body{
     color: white;
     Text-align: left;
 }
-.btn-custom1{
+#btn-custom1, #btn-custom2{
   padding: 10px 20px;
   transition: opacity .2s;
   background: var(--pri-col);
 }
-.btn-custom1:hover{
+#btn-custom1:hover, #btn-custom2:hover{
   text-decoration: none;
   background: var(--pri-col);
   opacity: .9;
