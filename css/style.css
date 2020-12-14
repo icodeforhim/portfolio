@@ -61,12 +61,22 @@ body{
 .jumbotron-h1-custom{
     font-family: 'Montserrat', sans-serif;
     color: white;
-    Text-align: left;
 }
-#btn-custom1, #btn-custom2{
+/*for buttons in jumbotron*/
+.buttons{
+  width: 70%;
+}
+#btn-custom1{
   padding: 10px 20px;
   transition: opacity .2s;
   background: var(--pri-col);
+  margin: 0 20px;
+}
+#btn-custom2{
+    padding: 10px 20px;
+    background: var(--blk-bg);
+    border: 2px solid var(--pri-col);
+    margin: 0 20px;
 }
 #btn-custom1:hover, #btn-custom2:hover{
   text-decoration: none;
@@ -135,7 +145,10 @@ body{
     }
     .navbar-brand-custom{ 
       font-size: .5em;
-}
+    }
+    .buttons{
+        width: 95%;
+    }
 }
 /* Small devices (phones, less than 768px) */
 @media (min-width: 577px) and (max-width: 767px) {
@@ -172,6 +185,9 @@ body{
         font-size: 1em;
         width: 90%;
     }
+    .buttons{
+        width: 90%;
+    }
     .navbar-brand-custom{ 
       font-size: .7em;
 }
@@ -186,6 +202,9 @@ body{
         font-size: 1.2em;
         width: 80%;
     }
+    .buttons{
+        width: 80%;
+    }
     
 }
 
@@ -196,6 +215,9 @@ body{
     }
     .jumbotron > div > p{
         font-size:  1.5em;
+        width: 80%;
+    }
+    .buttons{
         width: 80%;
     }
     
