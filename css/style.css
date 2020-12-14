@@ -68,10 +68,14 @@ body{
 /*for buttons in jumbotron*/
 .buttons{
   width: 70%;
+  text-shadow: none;
+}
+.buttons > a{
+    transition: background .2s;
+    font-weight: bold;
 }
 #btn-custom1{
   padding: 10px 20px;
-  transition: opacity .2s;
   background: var(--pri-col);
   
 }
@@ -186,7 +190,7 @@ body{
     }
     .buttons > a{
         width: 140px; 
-        font-size: .7em;
+        font-size: .9em;
     }
     #btn-custom1, #btn-custom2{
         margin: 0 7px;
