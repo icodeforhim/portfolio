@@ -61,6 +61,7 @@ body{
 .jumbotron-h1-custom{
     font-family: 'Montserrat', sans-serif;
     color: white;
+    Text-align: left;
 }
 .btn-custom1{
   padding: 10px 20px;
@@ -132,6 +133,9 @@ body{
     .projects > .container > .row > a:hover > .content{
         transform: scale(1.01);
     }
+    .navbar-brand-custom{ 
+      font-size: .5em;
+}
 }
 /* Small devices (phones, less than 768px) */
 @media (min-width: 577px) and (max-width: 767px) {
@@ -167,6 +171,9 @@ body{
     .jumbotron > div > p{
         font-size: 1em;
         width: 90%;
+    }
+    .navbar-brand-custom{ 
+      font-size: .7em;
 }
 }
 
