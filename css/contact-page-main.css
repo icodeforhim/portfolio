@@ -178,7 +178,7 @@ iframe {
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
-  text-align: left;
+  text-align: center;
   padding-bottom: 36px;
 }
 
@@ -322,12 +322,18 @@ textarea.input100 {
   opacity: .6;
 }
 .contacts{
-
   margin-top: 10px;
   text-align: left;
 }
 .contacts > p{
   font-family: Montserrat-Bold;
+}
+.contacts a{
+  text-decoration: none;
+  color: var(--blk-col);
+}
+.contacts a:hover{
+    text-decoration: none;
 }
 
 /*------------------------------------------------------------------
