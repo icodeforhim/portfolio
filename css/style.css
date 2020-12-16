@@ -89,6 +89,9 @@ body{
   background: var(--pri-col);
   opacity: .9;
 }
+.main-icons{
+    margin: 0 5px 0 0;
+}
 /* modifies the contents/Projects */
 .projects > .container > .row > a > .content{
     background: var(--lht-con);
@@ -123,7 +126,6 @@ body{
 /*contact-page*/
 #contact-page{
     background: white;
-    height: 500px;
 }
 .icons{
     margin: 0 7px;
