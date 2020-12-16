@@ -119,11 +119,28 @@ body{
     width: 100%; 
     margin-bottom: 20px;
 }
+/*end of projects*/
 /*contact-page*/
 #contact-page{
     background: white;
     height: 500px;
 }
+.icons{
+    margin: 0 7px;
+    width: 14px;
+}
+#gm img{
+    width: 14px;
+    margin-bottom: 3px;
+}
+#fb{
+    color: #1778F2;
+}
+#yt{
+    color: #FF0000;
+}
+
+/*end of contact page*/
 /* to remove the default margin in columns and padding in rows*/
 .row-no-padding {
     margin-left: 0;
