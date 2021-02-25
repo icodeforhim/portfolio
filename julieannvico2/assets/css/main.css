@@ -57,6 +57,22 @@ body {
 	background: rgba(159, 159, 159, 0.4); 
 }
 /*endscrollbar*/
+
+/*custom*/
+.mini-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+#valera {
+	width: 50%;
+	align-self: center;
+}
+.pcenter{
+	text-align: center;
+}
+/*endof custom*/
 ol, ul {
 	list-style: none;
 }
